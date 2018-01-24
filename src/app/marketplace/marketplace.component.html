@@ -5,7 +5,8 @@
     <h3 (click)="goToDetailPage(album)"><em>{{album.title}}</em> by {{album.artist}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{album.description}}
-      <hr>
+      <br>
+      <br>
       <app-edit-album [selectedAlbum]="album"></app-edit-album>
     </div>
   </div>
